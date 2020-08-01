@@ -2,7 +2,7 @@
 
 namespace :rips do
   desc "Rips for iOS - クチコミ500件以上データ取得"
-  task :rips => :environment do
-    Rips::Rips.scrape
+  task :scrape_rips => :environment do
+    Rips::ScrapeRips.scrape
   end
 end
